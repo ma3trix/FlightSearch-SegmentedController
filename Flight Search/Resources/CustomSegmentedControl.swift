@@ -9,9 +9,10 @@
 import UIKit
 
 @IBDesignable
-class CustomSegmentedControl: UIView {
+class CustomSegmentedControl: UIControl {
     var buttons = [UIButton]()
     var selector : UIView!
+    var selectedSegmentedIndex = 0
     
     @IBInspectable
     var borderWidth: CGFloat = 0 {
@@ -110,6 +111,7 @@ class CustomSegmentedControl: UIView {
             btn.setTitleColor(textColor, for: .normal)
             
             if btn == button {
+                selectedSegmentedIndex = buttonIndex
                 let selectorStartPosition = frame.width/CGFloat(buttons.count) * CGFloat(buttonIndex)
                 UIView.animate(withDuration: 0.3, animations: {
                     self.selector.frame.origin.x = selectorStartPosition

@@ -16,5 +16,7 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func csValueChanged(_ sender: CustomSegmentedControl) {
+    }
 }
 
