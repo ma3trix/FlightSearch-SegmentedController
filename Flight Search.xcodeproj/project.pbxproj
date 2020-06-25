@@ -13,6 +13,7 @@
 		30DA28E624A471F3009A4256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DA28E424A471F3009A4256 /* Main.storyboard */; };
 		30DA28E824A471F4009A4256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DA28E724A471F4009A4256 /* Assets.xcassets */; };
 		30DA28EB24A471F4009A4256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DA28E924A471F4009A4256 /* LaunchScreen.storyboard */; };
+		30DA28F624A47835009A4256 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DA28F524A47835009A4256 /* CustomSegmentedControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		30DA28E724A471F4009A4256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30DA28EA24A471F4009A4256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30DA28EC24A471F4009A4256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30DA28F524A47835009A4256 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +61,37 @@
 				30DA28DE24A471F3009A4256 /* AppDelegate.swift */,
 				30DA28E024A471F3009A4256 /* SceneDelegate.swift */,
 				30DA28E224A471F3009A4256 /* ViewController.swift */,
-				30DA28E424A471F3009A4256 /* Main.storyboard */,
-				30DA28E724A471F4009A4256 /* Assets.xcassets */,
-				30DA28E924A471F4009A4256 /* LaunchScreen.storyboard */,
+				30DA28F324A477E2009A4256 /* View */,
+				30DA28F424A47806009A4256 /* Controller */,
+				30DA28F224A477CB009A4256 /* Resources */,
 				30DA28EC24A471F4009A4256 /* Info.plist */,
 			);
 			path = "Flight Search";
+			sourceTree = "<group>";
+		};
+		30DA28F224A477CB009A4256 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30DA28E724A471F4009A4256 /* Assets.xcassets */,
+				30DA28F524A47835009A4256 /* CustomSegmentedControl.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		30DA28F324A477E2009A4256 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30DA28E924A471F4009A4256 /* LaunchScreen.storyboard */,
+				30DA28E424A471F3009A4256 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30DA28F424A47806009A4256 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +168,7 @@
 				30DA28E324A471F3009A4256 /* ViewController.swift in Sources */,
 				30DA28DF24A471F3009A4256 /* AppDelegate.swift in Sources */,
 				30DA28E124A471F3009A4256 /* SceneDelegate.swift in Sources */,
+				30DA28F624A47835009A4256 /* CustomSegmentedControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
